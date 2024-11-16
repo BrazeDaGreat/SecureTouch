@@ -1,0 +1,143 @@
+.registerBody {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registerBox {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 24px;
+  width: 50%;
+  min-height: 100vh;
+  gap: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 256px;
+}
+.field span {
+  color: #f4eeee;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  padding: 0px 2px;
+  border-bottom: 2px solid #f6f7f6;
+}
+// #f4ce14
+.field input,
+.field select {
+  width: 100%;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #f6f7f6;
+  border-left: 2px solid #f6f7f6;
+  color: #1aacac;
+  outline: none;
+  padding-left: 4px;
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 3px;
+}
+
+.createAccountBtn {
+  width: 256px;
+  color: #f4eeee;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 12px;
+  border: 2px solid #1aacac;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+
+.createAccountBtn:hover {
+  background: #1aacac;
+  transform: translateY(-5%);
+}
+.createAccountBtn:active {
+  transform: translateY(0%);
+}
+.form .heading {
+  width: 280px;
+  text-align: center;
+  font-size: 32px;
+  color: #1aacac;
+  font-weight: 700;
+}
+.form .note {
+  color: #f4eeee;
+  font-size: 10px;
+  margin-top: -16px;
+}
+
+.fingerfield {
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+}
+.fingerfield > span {
+  color: #f4eeee;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+  padding: 0px 2px;
+  border-bottom: 2px solid #f6f7f6;
+}
+.fingerfield .finger {
+  width: 100%;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #f6f7f6;
+  border-left: 2px solid #f6f7f6;
+  outline: none;
+  padding-left: 4px;
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.fingerfield .finger i {
+  font-size: 20px;
+  color: #1aacac;
+}
+.fingerfield .finger > span {
+  color: #f4eeee;
+  font-size: 10px;
+}
+
+hr {
+  width: 60%;
+  background-color: #1aacac;
+  border: none;
+  height: 4px;
+  border-radius: 16px;
+}
+
+h2.field_heading {
+  width: 60%;
+  color: white;
+}

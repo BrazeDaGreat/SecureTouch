@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #272829;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.blueButton {
+  position: absolute;
+  background-color: #1aacac;
+  color: #f4eeee;
+  text-decoration: none;
+  display: flex;
+  width: 256px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  margin: 8px;
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+.blueButton:hover {
+  transform: translateY(-10%);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #352f44;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b9b4c7;
+  border-radius: 18px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5c5470;
+}
+
+.tablify {
+  width: 100vh;
+  color: #f4eeee;
+}
+.tablify tr th,
+.tablify tr td {
+  // color: orange;
+  padding: 4px;
+}
+.tablify tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.tablify tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tablify tr:nth-child(1) {
+  background-color: #1aacac;
+}
+
+.tablifyBtnWrapper {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+
+.tablifyBtn {
+  width: 100%;
+  height: 100%;
+  padding: 6px 0px;
+  cursor: pointer;
+
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #f4eeee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  transition: 0.3s ease all;
+}
+.tablifyBtn:hover {
+  transform: translateY(-10%);
+}
+
+.tablifyBtn.trash {
+  background: #ff8080;
+}
+.tablifyBtn.add {
+  background: #cdfad5;
+  color: black;
+}

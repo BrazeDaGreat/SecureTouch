@@ -1,0 +1,23 @@
+._error_body {
+  position: absolute;
+  width: 50%;
+  height: 42px;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f45050;
+  border-radius: 18px;
+  z-index: 10;
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #f6f7f6;
+  font-weight: 600;
+  font-size: 18px;
+
+  display: none;
+  box-shadow: 6px 5px 14px 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 6px 5px 14px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 6px 5px 14px 1px rgba(0, 0, 0, 0.6);
+}

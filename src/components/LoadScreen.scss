@@ -1,0 +1,38 @@
+._loadScreen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+._spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #1aacac;
+  border-right: none;
+  border-top: none;
+  border-radius: 100%;
+  animation: _spin 0.5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._spinner_inner {
+  width: 18px;
+  height: 18px;
+  background-color: #f4eeee;
+}
+@keyframes _spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

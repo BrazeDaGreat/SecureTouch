@@ -1,0 +1,60 @@
+.popup_wrapper {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+.popup_window {
+  min-width: 768px;
+  color: white;
+  border-radius: 8px;
+  padding: 24px 32px;
+  position: relative;
+
+  box-shadow: 6px 5px 14px 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 6px 5px 14px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 6px 5px 14px 1px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+
+  scale: 0;
+
+  background: #454545;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+.popup_btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1aacac;
+}
+
+@keyframes scaleUp {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes scaleDown {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
