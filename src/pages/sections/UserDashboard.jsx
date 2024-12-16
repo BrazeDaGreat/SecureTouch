@@ -312,8 +312,22 @@ function ServicesRow3() {
               <Property property="Name" value={data.name} />
               <Property property="Account ID" value={data.id} />
               <Property property="Balance" value={data.balance} />
-              <Property property="Phone No.#" value={data.contact} />
-              <Property property="CNIC No.#" value={data.cnic} />
+              <Property
+                property="Phone No.#"
+                value={
+                  data.contact
+                    ? data.contact.replace(/^(.{6})(.{5})(.*)$/, "$1*****$3")
+                    : ""
+                }
+              />
+              <Property
+                property="CNIC No.#"
+                value={
+                  data.cnic
+                    ? data.cnic.replace(/^(.{6})(.{7})(.*)$/, "$1*******$3")
+                    : ""
+                }
+              />
             </div>
             <div>
               <Property property="Card ID" value={data.card.id} />

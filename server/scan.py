@@ -27,15 +27,6 @@ def quality_check(lst):
     ret = True
 
     print(f"\t Checking Quality...")
-    
-    # print_quality = 0.08 * len(kp1)
-    # if print_quality < 245:
-    #     print(f"\t \t {bcolors.FAIL} {print_quality} / 245 {bcolors.ENDC}")
-    #     return [False, "Poor fingerprint quality. Please try again."]
-    # else:
-    #     print(f"\t \t {bcolors.OKGREEN} {print_quality} / 250 {bcolors.ENDC}")
-
-    # print(f"{quality} / 225 \t ({len(kp1)})")
 
     for fngr in lst:
         img1 = base64_to_image(fngr)
