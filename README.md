@@ -10,7 +10,8 @@ It uses,
 2. Peewee DB as the SQLite Wrapper.
 3. React.js as the frontend.
 4. SASS for styling.
-5. Digital Persona's SDK.
+5. Digital Persona's SDK to fetch fingerprint images.
+6. Pillow, Numpy, with SIFT Algorithm for Fingerprint detection.
 
 ## Setting Up
 
