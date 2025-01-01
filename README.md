@@ -11,7 +11,7 @@ It uses,
 3. React.js as the frontend.
 4. SASS for styling.
 5. Digital Persona's SDK to fetch fingerprint images.
-6. Pillow, Numpy, with SIFT Algorithm for Fingerprint detection.
+6. Pillow, Numpy, with SIFT Algorithm for Fingerprint authentication.
 
 ## Setting Up
 
